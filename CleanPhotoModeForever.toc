@@ -1,0 +1,12 @@
+## Interface: 16001
+## Title: Clean Photo Mode Forever
+## Notes: Hides every nameplate, unit name, chat bubble, damage number and in-world icon when you hide the UI (Alt-Z), then puts it all back when you show the UI again.
+## Author: tovoxious
+## Version: 1.0.0
+## IconTexture: Interface\Icons\INV_Misc_Spyglass_03
+## SavedVariables: CleanPhotoModeForeverDB
+## X-License: MIT
+## X-Website: https://github.com/tovoxious/CleanPhotoModeForever
+
+Core.lua
+Options.lua
