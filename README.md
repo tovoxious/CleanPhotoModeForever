@@ -36,7 +36,7 @@ git clone https://github.com/tovoxious/CleanPhotoModeForever.git
 ## Usage
 
 - Hide the UI with your Toggle User Interface key. That's it.
-- Options: **Esc > Options > AddOns > Clean Photo Mode Forever**, or type `/cpm`.
+- Options: **Esc > Options > AddOns > Clean Photo Mode**, or type `/cpm`.
 - `/cpm restore` puts back anything still held by photo mode (there's also a button for this in the options).
 - `/cpm status` shows how many settings are currently held.
 - `/cleanphoto` works anywhere `/cpm` does.

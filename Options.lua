@@ -1,8 +1,10 @@
--- Options panel (Esc > Options > AddOns > Clean Photo Mode Forever)
+-- Options panel (Esc > Options > AddOns > Clean Photo Mode)
 
 local ADDON_NAME, ns = ...
 
 local TITLE = "Clean Photo Mode Forever"
+-- Shorter name for the entry in Options > AddOns, which has little room.
+local CATEGORY_NAME = "Clean Photo Mode"
 
 local OPTIONS = {
 	{
@@ -53,7 +55,7 @@ local FOOTNOTE = "Settings are only changed while the UI is hidden. If you chang
 function ns.CreateOptionsPanel()
 	local db = ns.db
 	local panel = CreateFrame("Frame")
-	panel.name = TITLE
+	panel.name = CATEGORY_NAME
 
 	local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 	title:SetPoint("TOPLEFT", 16, -16)
@@ -130,7 +132,7 @@ function ns.CreateOptionsPanel()
 		Refresh()
 	end
 
-	local category = Settings.RegisterCanvasLayoutCategory(panel, TITLE)
+	local category = Settings.RegisterCanvasLayoutCategory(panel, CATEGORY_NAME)
 	Settings.RegisterAddOnCategory(category)
 	ns.category = category
 end
